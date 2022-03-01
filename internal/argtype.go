@@ -101,6 +101,9 @@ type ArgType struct {
 	// QueryNullFields is the list of query null fields.
 	QueryNullFields string `arg:"--query-null-fields,-O,help:comma separated list of fields names which are nullable"`
 
+	// QueryIndexPrefixes generate functions for compound index prefixes.
+	QueryIndexPrefixes bool `arg:"--query-index-prefixes,-P,help:generate functions for compound index prefixes"`
+
 	// EscapeAll toggles escaping schema, table, and column names in SQL queries.
 	EscapeAll bool `arg:"--escape-all,-X,help:escape all names in SQL queries"`
 
