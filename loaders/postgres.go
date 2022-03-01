@@ -10,8 +10,8 @@ import (
 
 	"github.com/knq/snaker"
 
-	"github.com/mbilski/xo/internal"
-	"github.com/mbilski/xo/models"
+	"github.com/cloudentity/xo/internal"
+	"github.com/cloudentity/xo/models"
 )
 
 func init() {

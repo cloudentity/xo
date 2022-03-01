@@ -1,3 +1,4 @@
+//go:build oracle
 // +build oracle
 
 package loaders
@@ -10,8 +11,8 @@ import (
 
 	_ "gopkg.in/rana/ora.v4"
 
-	"github.com/mbilski/xo/internal"
-	"github.com/mbilski/xo/models"
+	"github.com/cloudentity/xo/internal"
+	"github.com/cloudentity/xo/models"
 )
 
 func init() {
