@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/lib/pq"
-	"github.com/mbilski/xo/examples/pgcatalog/pgtypes"
+	"github.com/cloudentity/xo/examples/pgcatalog/pgtypes"
 )
 
 // ASCII calls the stored procedure 'pg_catalog.ascii(text) integer' on db.

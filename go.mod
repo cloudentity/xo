@@ -1,4 +1,4 @@
-module github.com/mbilski/xo
+module github.com/cloudentity/xo
 
 require (
 	github.com/alexflint/go-arg v1.3.0

@@ -3,8 +3,8 @@ package loaders_test
 import (
 	"testing"
 
-	"github.com/mbilski/xo/internal"
-	"github.com/mbilski/xo/loaders"
+	"github.com/cloudentity/xo/internal"
+	"github.com/cloudentity/xo/loaders"
 )
 
 func Test_MyParseType(t *testing.T) {

@@ -1,3 +1,4 @@
+//go:build ignore
 // +build ignore
 
 package main
@@ -17,7 +18,7 @@ import (
 var (
 	flagPath = flag.String(
 		"path",
-		os.Getenv("GOPATH")+"/src/github.com/mbilski/xo/examples/pokedex/pokedex/pokedex/data",
+		os.Getenv("GOPATH")+"/src/github.com/cloudentity/xo/examples/pokedex/pokedex/pokedex/data",
 		"path",
 	)
 )
