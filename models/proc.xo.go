@@ -16,7 +16,7 @@ func PgProcs(db XODB, schema string) ([]*Proc, error) {
 	// sql query
 	const sqlstr = `SELECT ` +
 		`p.proname, ` + // ::varchar AS proc_name
-		`pg_get_function_result(p.oid) ` + // ::varchar AS return_type
+		`coalesce(pg_get_function_result(p.oid), 'void') ` + // ::varchar AS return_type
 		`FROM pg_proc p ` +
 		`JOIN ONLY pg_namespace n ON p.pronamespace = n.oid ` +
 		`WHERE n.nspname = $1`
