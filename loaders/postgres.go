@@ -6,12 +6,10 @@ import (
 	"strconv"
 	"strings"
 
-	_ "github.com/lib/pq"
-
-	"github.com/knq/snaker"
-
 	"github.com/cloudentity/xo/internal"
 	"github.com/cloudentity/xo/models"
+	"github.com/knq/snaker"
+	_ "github.com/lib/pq"
 )
 
 func init() {
@@ -199,6 +197,8 @@ func PgParseType(args *internal.ArgType, dt string, nullable bool) (int, string,
 	// special case for []slice
 	if typ == "string" && asSlice {
 		return precision, "StringSlice{}", "StringSlice"
+	} else if typ == "sql.NullString" && asSlice {
+		return precision, "nil", "[]string"
 	}
 
 	// correct type if slice
