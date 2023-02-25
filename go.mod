@@ -13,8 +13,7 @@ require (
 	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/xo/dburl v0.0.0-20200124232849-e9ec94f52bc3
 	github.com/xo/xoutil v0.0.0-20171112033149-46189f4026a5
-	golang.org/x/crypto v0.0.0-20200423211502-4bdfaf469ed5 // indirect
-	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/rana/ora.v4 v4.1.15
 )
